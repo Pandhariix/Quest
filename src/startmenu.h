@@ -1,8 +1,8 @@
 #ifndef STARTMENU_H
 #define STARTMENU_H
 
-#include <SFML/Window.hpp>
-#include <SFML/Graphics.hpp>
+#include <../libs/SFML-2.3.2/include/SFML/Window.hpp>
+#include <../libs/SFML-2.3.2/include/SFML/Graphics.hpp>
 
 #include <string>
 #include <iostream>
