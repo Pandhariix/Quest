@@ -1,2 +1,2 @@
-# Quest
-An indie C++ game
+# Source Code
+Source code for the game
