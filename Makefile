@@ -1,7 +1,7 @@
 CC = g++ -std=c++11 -O2 -Wall
 SRC = src/main.cpp src/startmenu.cpp
 EXE = Quest
-INC = libs/SFML-2.3.2/include/SFML
+INC = libs/SFML-2.3.2/include
 HEADERS = src/
 LIB = libs/SFML-2.3.2/bin
 LINK = -lsfml-window-2 -lsfml-window-d-2
