@@ -8,6 +8,12 @@
 #include <iostream>
 #include <soundmanager.h>
 
+//images
+#define START_SCREEN "ressources/images/menus/StartScreen.jpg"
+
+//fonts
+#define CHINYEN_FONT "ressources/fonts/menus/chinyen.otf"
+
 class OptionsMenu
 {
 

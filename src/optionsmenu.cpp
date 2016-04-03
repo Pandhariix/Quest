@@ -33,7 +33,7 @@ OptionsMenu::OptionsMenu(sf::RenderWindow *optionsMenu)
     this->optionsMenu->setTitle(this->name);
 
     //textures
-    if(!backgroundImage.loadFromFile("Images/StartMenu/background.jpg"))
+    if(!backgroundImage.loadFromFile(START_SCREEN))
         std::cerr<<"Unable to load the background image"<<std::endl;
     if(!buttonSaveAndBackToMenuImage.loadFromFile("Images/StartMenu/Options/button_saveAndBackToTitle.png"))
         std::cerr<<"Unable to load the background image"<<std::endl;
@@ -60,7 +60,7 @@ OptionsMenu::OptionsMenu(sf::RenderWindow *optionsMenu)
 
 
     //fonts
-    if(!titleFont.loadFromFile("Fonts/StartMenu/chinyen.ttf"))
+    if(!titleFont.loadFromFile(CHINYEN_FONT))
         std::cerr<<"Unable to load the title font"<<std::endl;
 
     //text
