@@ -15,7 +15,10 @@ SoundManager::SoundManager()
 void SoundManager::playMusic(std::string musicFile, int volume, bool loop)
 {
     if(!this->music.openFromFile(this->files[musicFile]))
+    {
         std::cerr<<"unable to load the music file :"<<this->files[musicFile]<<std::endl;
+        return;        
+    }
 
     this->music.setVolume(volume);
     this->music.setLoop(loop);
@@ -25,7 +28,10 @@ void SoundManager::playMusic(std::string musicFile, int volume, bool loop)
 void SoundManager::playSound(std::string soundFile, int volume, bool loop)
 {
     if(!this->buffer.loadFromFile(this->files[soundFile]))
+    {
         std::cerr<<"unable to load the sound file :"<<this->files[soundFile]<<std::endl;
+        return;        
+    }
     
     this->sound.setBuffer(this->buffer);
     this->sound.setVolume(volume);
