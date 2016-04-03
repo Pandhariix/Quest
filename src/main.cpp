@@ -12,7 +12,7 @@ int main()
 
     //music
     SoundManager soundMenu;
-    soundMenu.playMusic(0, 40, true);
+    soundMenu.playMusic("dark_winds", 40, true);
 
     startMenu = new StartMenu();
 
