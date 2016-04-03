@@ -1,4 +1,4 @@
-#include "loadgamemenu.h"
+#include <loadgamemenu.h>
 
 LoadGameMenu::LoadGameMenu(sf::RenderWindow *loadGameMenu)
 {
@@ -29,7 +29,7 @@ LoadGameMenu::LoadGameMenu(sf::RenderWindow *loadGameMenu)
     this->loadGameMenu->setTitle(this->name);
 
     //textures
-    if(!backgroundImage.loadFromFile("Images/StartMenu/background.jpg"))
+    if(!backgroundImage.loadFromFile(START_SCREEN))
         std::cerr<<"Unable to load the background image"<<std::endl;
     if(!buttonBackImage.loadFromFile("Images/StartMenu/Options/button_back.png"))
         std::cerr<<"Unable to load the background image"<<std::endl;
@@ -50,7 +50,7 @@ LoadGameMenu::LoadGameMenu(sf::RenderWindow *loadGameMenu)
 
 
     //fonts
-    if(!titleFont.loadFromFile("Fonts/StartMenu/chinyen.ttf"))
+    if(!titleFont.loadFromFile(CHINYEN_FONT))
         std::cerr<<"Unable to load the title font"<<std::endl;
 
     //text
