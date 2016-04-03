@@ -1,9 +1,6 @@
 #ifndef STARTMENU_H
 #define STARTMENU_H
 
-//#include <../libs/SFML-2.3.2/include/SFML/Window.hpp>
-//#include <../libs/SFML-2.3.2/include/SFML/Graphics.hpp>
-
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
@@ -12,6 +9,8 @@
 #include <soundmanager.h>
 #include <optionsmenu.h>
 #include <loadgamemenu.h>
+
+#define START_SCREEN "ressources/images/menus/StartScreen.jpg"
 
 class StartMenu
 {

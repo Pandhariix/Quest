@@ -37,7 +37,7 @@ StartMenu::StartMenu()
     this->startMenu->setTitle(this->name);
 
     //textures
-    if(!backgroundImage.loadFromFile("Images/StartMenu/background.jpg"))
+    if(!backgroundImage.loadFromFile(START_SCREEN))
         std::cerr<<"Unable to load the background image"<<std::endl;
     if(!buttonStartImage.loadFromFile("Images/StartMenu/button_start.png"))
         std::cerr<<"Unable to load the background image"<<std::endl;
@@ -70,7 +70,7 @@ StartMenu::StartMenu()
 
 
     //fonts
-    if(!titleFont.loadFromFile("Fonts/StartMenu/chinyen.ttf"))
+    if(!titleFont.loadFromFile(CHINYEN_FONT))
         std::cerr<<"Unable to load the title font"<<std::endl;
 
     //text
