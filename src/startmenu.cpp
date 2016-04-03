@@ -115,7 +115,7 @@ StartMenu::StartMenu()
                     buttonOptions.setTexture(buttonOptionsImage);
                     buttonExit.setTexture(buttonExitImage);
 
-                    this->soundMenu.playSound(0, 60, false);
+                    this->soundMenu.playSound("dark_winds", 60, false);
                     this->start = true;
                 }
                 else if(sf::Mouse::getPosition(*startMenu).x >= buttonLoadGame.getPosition().x &&
@@ -128,7 +128,7 @@ StartMenu::StartMenu()
                     buttonOptions.setTexture(buttonOptionsImage);
                     buttonExit.setTexture(buttonExitImage);
 
-                    this->soundMenu.playSound(0, 60, false);
+                    this->soundMenu.playSound("dark_winds", 60, false);
                     this->loadGame = true;
                 }
                 else if(sf::Mouse::getPosition(*startMenu).x >= buttonOptions.getPosition().x &&
@@ -141,7 +141,7 @@ StartMenu::StartMenu()
                     buttonOptions.setTexture(buttonOptionsImageHoover);
                     buttonExit.setTexture(buttonExitImage);
 
-                    this->soundMenu.playSound(0, 60, false);
+                    this->soundMenu.playSound("dark_winds", 60, false);
                     this->options = true;
                 }
                 else if(sf::Mouse::getPosition(*startMenu).x >= buttonExit.getPosition().x &&
@@ -154,7 +154,7 @@ StartMenu::StartMenu()
                     buttonOptions.setTexture(buttonOptionsImage);
                     buttonExit.setTexture(buttonExitImageHoover);
 
-                    this->soundMenu.playSound(0, 60, false);
+                    this->soundMenu.playSound("dark_winds", 60, false);
 
                     //stop the music and exit
                     this->exit = true;
@@ -191,14 +191,14 @@ StartMenu::StartMenu()
             if(loadGameMenu->getBack())
             {
                 delete loadGameMenu;
-                this->soundMenu.playSound(0, 60, false);
+                this->soundMenu.playSound("dark_winds", 60, false);
                 this->loadGame = false;
             }
             else if(loadGameMenu->getExit())
             {
                 delete loadGameMenu;
                 this->loadGame = false;
-                this->soundMenu.playSound(0, 60, false);
+                this->soundMenu.playSound("dark_winds", 60, false);
                 this->exit = true;
             }
         }
@@ -212,14 +212,14 @@ StartMenu::StartMenu()
             if(optionsMenu->getBack() || optionsMenu->getSaveAndBackToMenu())
             {
                 delete optionsMenu;
-                this->soundMenu.playSound(0, 60, false);
+                this->soundMenu.playSound("dark_winds", 60, false);
                 this->options = false;
             }
             else if(optionsMenu->getExit())
             {
                 delete optionsMenu;
                 this->options = false;
-                this->soundMenu.playSound(0, 60, false);
+                this->soundMenu.playSound("dark_winds", 60, false);
                 this->exit = true;
             }
         }
