@@ -10,7 +10,11 @@
 #include <optionsmenu.h>
 #include <loadgamemenu.h>
 
+//images
 #define START_SCREEN "ressources/images/menus/StartScreen.jpg"
+
+//fonts
+#define CHINYEN_FONT "ressources/fonts/menus/chinyen.otf"
 
 class StartMenu
 {
