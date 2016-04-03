@@ -21,7 +21,7 @@ endif
 clean:
 
 ifeq ($(OS),Windows_NT)
-	del Quest.exe
+	del $(PATH_EXE)\$(EXE).exe
 
 else
 
