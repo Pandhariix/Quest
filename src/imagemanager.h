@@ -16,7 +16,6 @@ private:
 
     std::string textureType;
     int size;
-    std::vector <std::string> textureFiles; //erase
     std::map<std::string,std::string> textureFiles;
     sf::Texture texture;
     std::vector <std::pair <sf::Sprite, Coordinates> > listeSprites;
