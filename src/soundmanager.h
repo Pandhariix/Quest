@@ -4,15 +4,20 @@
 #include <SFML/Audio.hpp>
 #include <iostream>
 #include <string.h>
+#include <map.h>
+
+//musics
+#define DARK_WINDS "ressources/musics/menus/DarkWinds.OGG"
+#define FOXIE_EPIC "ressources/musics/menus/FoxieEpic.OGG"
+
+//sounds
+#define CLICK_BUTTON "ressources/sounds/menus/ClickButton.wav"
 
 class SoundManager
 {
 private:
 
-    //int musicType;
-    //int soundType;
-    std::vector<std::string> soundFiles;
-    std::vector<std::string> musicFiles;
+    std::map<std::string,std::string> files;
     sf::Music music;
     sf::SoundBuffer buffer;
     sf::Sound sound;
@@ -21,8 +26,8 @@ public:
 
     SoundManager();
 
-    void playMusic(int musicType, int volume, bool loop);
-    void playSound(int soundType, int volume, bool loop);
+    void playMusic(std::string musicFile, int volume, bool loop);
+    void playSound(std::string soundFile, int volume, bool loop);
 
     void stopMusic();
 
