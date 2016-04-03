@@ -4,16 +4,20 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string.h>
+#include <map.h>
 
 #include <coordinates.h>
+
+#define START_SCREEN "ressources/images/menus/StartScreen.jpg" // to be modified, not a sprite, this is an example
 
 class ImageManager
 {
 private:
 
-    int type;
+    std::string textureType;
     int size;
-    std::vector <std::string> textureFiles;
+    std::vector <std::string> textureFiles; //erase
+    std::map<std::string,std::string> textureFiles;
     sf::Texture texture;
     std::vector <std::pair <sf::Sprite, Coordinates> > listeSprites;
 
@@ -21,9 +25,9 @@ public:
 
     ImageManager();
 
-    void loadTexture(int type);
+    void loadTexture(std::string textureType);
     void makeSprites();
-    void getSprites(int type, std::vector <sf::Sprite> sprites);
+    void getSprites(std::string textureType, std::vector <sf::Sprite> sprites);
     ~ImageManager();
 };
 

@@ -2,20 +2,16 @@
 
 ImageManager::ImageManager()
 {
-    this->textureFiles.resize(1);
-
-    //define the different textures
-    //standard grass
-    this->textureFiles[0] = "Images/Game/Terrain/standard_grass.png";
+    this->textureFiles.emplace("start_screen",START_SCREEN);
 }
 
-void ImageManager::loadTexture(int type)
+void ImageManager::loadTexture(std::string textureType)
 {
 
-    this->type = type;
+    this->textureType = textureType;
 
-    if(!this->texture.loadFromFile(this->textureFiles[type]))
-        std::cerr<<"Unable to load the texture "<<type<<std::endl;
+    if(!this->texture.loadFromFile(this->textureFiles[textureType]))
+        std::cerr<<"Unable to load the texture "<<textureType<<std::endl;
 
 }
 
@@ -24,10 +20,10 @@ void ImageManager::makeSprites()
 
     this->listeSprites.clear();
 
-    switch(this->type)
+    switch(this->textureType)
     {
-        //standard grass
-        case 0:
+        //standard grass, TODO
+        case "standard_grass":
         this->listeSprites.resize(1);
         this->size= 1;
         this->listeSprites[0].second.x=0;
@@ -47,9 +43,9 @@ void ImageManager::makeSprites()
 
 }
 
-void ImageManager::getSprites(int type, std::vector<sf::Sprite> sprites)
+void ImageManager::getSprites(std::string textureType, std::vector<sf::Sprite> &sprites)
 {
-    this->loadTexture(type);
+    this->loadTexture(textureType);
     this->makeSprites();
 
 
