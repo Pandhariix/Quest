@@ -31,13 +31,13 @@ LoadGameMenu::LoadGameMenu(sf::RenderWindow *loadGameMenu)
     //textures
     if(!backgroundImage.loadFromFile(START_SCREEN))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonBackImage.loadFromFile("Images/StartMenu/Options/button_back.png"))
+    if(!buttonBackImage.loadFromFile(BUTTON_BACK))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonExitImage.loadFromFile("Images/StartMenu/button_exit.png"))
+    if(!buttonExitImage.loadFromFile(BUTTON_EXIT))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonBackImageHoover.loadFromFile("Images/StartMenu/Options/button_back_hoover.png"))
+    if(!buttonBackImageHoover.loadFromFile(BUTTON_BACK_HOOVER))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonExitImageHoover.loadFromFile("Images/StartMenu/button_exit_hoover.png"))
+    if(!buttonExitImageHoover.loadFromFile(BUTTON_EXIT_HOOVER))
         std::cerr<<"Unable to load the background image"<<std::endl;
 
     //sprites

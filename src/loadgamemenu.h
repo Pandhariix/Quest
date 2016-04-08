@@ -12,6 +12,13 @@
 //images
 #define START_SCREEN "ressources/images/menus/StartScreen.jpg"
 
+//buttons
+#define BUTTON_BACK "ressources/images/menus/buttons/back.png"
+#define BUTTON_EXIT "ressources/images/menus/buttons/exit.png"
+
+#define BUTTON_BACK_HOOVER "ressources/images/menus/buttons_hoover/back.png"
+#define BUTTON_EXIT_HOOVER "ressources/images/menus/buttons_hoover/exit.png"
+
 //fonts
 #define CHINYEN_FONT "ressources/fonts/menus/chinyen.otf"
 
