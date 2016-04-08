@@ -47,13 +47,13 @@ StartMenu::StartMenu()
         std::cerr<<"Unable to load the background image"<<std::endl;
     if(!buttonExitImage.loadFromFile(BUTTON_EXIT))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonStartImageHoover.loadFromFile("Images/StartMenu/button_start_hoover.png"))
+    if(!buttonStartImageHoover.loadFromFile(BUTTON_START_HOOVER))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonLoadGameImageHoover.loadFromFile("Images/StartMenu/button_loadGame_hoover.png"))
+    if(!buttonLoadGameImageHoover.loadFromFile(BUTTON_LOAD_GAME_HOOVER))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonOptionsImageHoover.loadFromFile("Images/StartMenu/button_options_hoover.png"))
+    if(!buttonOptionsImageHoover.loadFromFile(BUTTON_OPTIONS_HOOVER))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonExitImageHoover.loadFromFile("Images/StartMenu/button_exit_hoover.png"))
+    if(!buttonExitImageHoover.loadFromFile(BUTTON_EXIT_HOOVER))
         std::cerr<<"Unable to load the background image"<<std::endl;
 
     //sprites

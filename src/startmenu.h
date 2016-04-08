@@ -19,6 +19,11 @@
 #define BUTTON_OPTIONS "ressources/images/menus/buttons/options.png"
 #define BUTTON_EXIT "ressources/images/menus/buttons/exit.png"
 
+#define BUTTON_START_HOOVER "ressources/images/menus/buttons_hoover/start.png"
+#define BUTTON_LOAD_GAME_HOOVER "ressources/images/menus/buttons_hoover/load_game.png"
+#define BUTTON_OPTIONS_HOOVER "ressources/images/menus/buttons_hoover/options.png"
+#define BUTTON_EXIT_HOOVER "ressources/images/menus/buttons_hoover/exit.png"
+
 //fonts
 #define CHINYEN_FONT "ressources/fonts/menus/chinyen.otf"
 
