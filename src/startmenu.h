@@ -13,6 +13,12 @@
 //images
 #define START_SCREEN "ressources/images/menus/StartScreen.jpg"
 
+//buttons
+#define BUTTON_START "ressources/images/menus/buttons/start.png"
+#define BUTTON_LOAD_GAME "ressources/images/menus/buttons/load_game.png"
+#define BUTTON_OPTIONS "ressources/images/menus/buttons/options.png"
+#define BUTTON_EXIT "ressources/images/menus/buttons/exit.png"
+
 //fonts
 #define CHINYEN_FONT "ressources/fonts/menus/chinyen.otf"
 

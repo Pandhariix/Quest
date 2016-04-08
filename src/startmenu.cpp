@@ -39,13 +39,13 @@ StartMenu::StartMenu()
     //textures
     if(!backgroundImage.loadFromFile(START_SCREEN))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonStartImage.loadFromFile("Images/StartMenu/button_start.png"))
+    if(!buttonStartImage.loadFromFile(BUTTON_START))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonLoadGameImage.loadFromFile("Images/StartMenu/button_loadGame.png"))
+    if(!buttonLoadGameImage.loadFromFile(BUTTON_LOAD_GAME))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonOptionsImage.loadFromFile("Images/StartMenu/button_options.png"))
+    if(!buttonOptionsImage.loadFromFile(BUTTON_OPTIONS))
         std::cerr<<"Unable to load the background image"<<std::endl;
-    if(!buttonExitImage.loadFromFile("Images/StartMenu/button_exit.png"))
+    if(!buttonExitImage.loadFromFile(BUTTON_EXIT))
         std::cerr<<"Unable to load the background image"<<std::endl;
     if(!buttonStartImageHoover.loadFromFile("Images/StartMenu/button_start_hoover.png"))
         std::cerr<<"Unable to load the background image"<<std::endl;
